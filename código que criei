@@ -1,0 +1,11 @@
+nome = str(input("Digite seu nome para ver se consta no cadrasto: "))
+vendedor = int(input(f"Olá, {nome}. Qual foi a soma total do número de vendas deste mês? "))
+
+if vendedor >= 500:
+    print (f"Você, {nome}, bateu a meta, Parabéns. Ai mamãe segura 10 milllllllllll.")
+
+elif vendedor < 500:
+    print (f"Você, {nome}, não bateu a meta, melhore, está péssimo, força, força, força, força!!")
+
+else: 
+    print (f"Fim de contato, {nome}.")
