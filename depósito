@@ -1,0 +1,23 @@
+class Conta():
+    def __init__(self, nome):
+        self.nome = nome
+        self.saldo = 0
+
+    def deposito(self, valor):
+        self.saldo += valor
+        print(f'Seu saldo é: {self.saldo}')
+
+    def saque(self,valor):
+        self.saldo -= valor
+        print(f'Seu saldo é: {self.saldo}')
+    
+pessoa1 = Conta('Alice')
+while True:
+    pergunta = float(input(f'\nDigite [1] para despositar ou \n[2] para sacar: '))
+    if pergunta == 1:
+        pessoa1.deposito(float(input('Digite o Valor de deposito: ')))
+    elif pergunta == 2:
+        pessoa1.saque(float(input('Quanto deseja sacar?: ')))
+    pergunta2 =(input('Deseja continuar depositando? [S/N]'))
+    if pergunta2 in 'Nn':
+        break
