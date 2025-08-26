@@ -9,3 +9,52 @@ elif vendedor < 500:
 
 else: 
     print (f"Fim de contato, {nome}.")
+_________________________________________________________________________________________________________________________________________________________________________________
+
+class Vendas():
+    def __init__(self, nome):
+        self.nome = nome 
+        self.vendas = 0
+    
+    def vendeu(self, vendas):
+        self.vendas += vendas
+
+    def bateu_meta(self, meta):
+        if self.vendas >= meta:
+            print(f'{self.nome} Bateu a meta!')
+        
+        else:
+            print(f'{self.nome} Não betu a mate!')
+    
+
+vendedor1 = Vendas('CJ da quebrada')
+vendedor1.vendeu(600)
+vendedor1.bateu_meta(500)
+
+vendedor2 = Vendas('Marcelo do Tigrinho')
+vendedor2.vendeu(100000)
+vendedor2.bateu_meta(500000)
+
+class Vendas():
+    def __init__(self, nome):
+        self.nome = nome 
+        self.vendas = 0
+    
+    def vendeu(self, vendas):
+        self.vendas += vendas
+
+    def bateu_meta(self, meta):
+        if self.vendas >= meta:
+            print(f'{self.nome} Bateu a meta!')
+        
+        else:
+            print(f'{self.nome} Não betu a mate!')
+vendedor1 = Vendas('CJ da quebrada')
+vendedor1.vendeu(600)
+vendedor1.bateu_meta(500)
+
+vendedor2 = Vendas('Marcelo do Tigrinho')
+vendedor2.vendeu(100000)
+vendedor2.bateu_meta(500000)
+
+
