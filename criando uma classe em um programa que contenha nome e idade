@@ -8,7 +8,7 @@ class Individuo:
     def exibir (self):
         print(f'Olá, eu sou {self.nome}, tenho {self.idade} anos e sou {self.nacionalidade}.')
 
-pessoa1 = Individuo ('Luan', 17, 'brasileiro nascido em Maricá')
+pessoa1 = Individuo ('Luan', 17, 'brasileiro nascido em Maricá, Rio de Janeiro')
 pessoa1.exibir()
-pessoa2 = Individuo ('Alice', 17, 'brasileira nascida em São Gonçalo')
+pessoa2 = Individuo ('Alice', 17, 'brasileira nascida em São Gonçalo, Rio de Janeiro')
 pessoa2.exibir ()
